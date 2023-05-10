@@ -7,7 +7,7 @@ import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 
 export default function Testimonials() {
     return (
-        <div className='flex flex-col justify-center bg-cyan-800 w-full px-6 sm:px-12 lg:px-32 py-20 flex flex-col items-center'>
+        <div id='testimonials' className='flex flex-col justify-center bg-cyan-800 w-full px-6 sm:px-12 lg:px-32 py-20 flex flex-col items-center'>
             <div className="sm:w-4/6 md:w-3/5 xl:w-2/5 text-center text-white mb-20">
                 <h2 className='font-bold mb-4 text-4xl font-martel'>What Clients Say</h2>
                 <p className='text-sm'>Problems trying to resolve the conflict between the two major realms

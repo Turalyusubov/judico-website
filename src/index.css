@@ -7,3 +7,17 @@
 .nav-item::after {
     transition: .3s;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* position: fixed; */
+    /* position: ; */
+}
+
+nav {
+    position: fixed;
+    /* color: #f3f3f3c2; */
+}

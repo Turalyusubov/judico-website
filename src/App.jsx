@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className='font-open-sans relative'>
+    <div className='font-open-sans relative scroll-smooth'>
       <Navbar />
       <Header />
       <Features />

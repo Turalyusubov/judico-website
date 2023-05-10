@@ -4,7 +4,7 @@ import Employee from '../assets/employee.jpg'
 
 export default function Contact() {
     return (
-        <div className='relative flex flex-col items-center'>
+        <div id='contact' className='relative flex flex-col items-center'>
             <div className="flex gap-12 lg:gap-0 items-center lg:items-start flex-col lg:flex-row lg:h-[100vh] lg:justify-between cover bg-gray-700 w-full px-6 sm:px-12 lg:px-32 py-20">
                 <div className="lg:w-3/5 lg:w-5/12">
                     <h3 className='text-4xl mb-4 text-white font-bold font-martel'>We Have Branches All Over The World</h3>

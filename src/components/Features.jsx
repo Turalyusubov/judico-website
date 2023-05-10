@@ -51,7 +51,7 @@ export default function Features() {
     }
 
     return (
-        <div className='w-full px-6 sm:px-12 lg:px-32 py-20'>
+        <div id='features' className='w-full px-6 sm:px-12 lg:px-32 py-20'>
             <div className="sm:w-4/6 md:w-3/5 xl:w-2/5">
                 <h2 className='font-bold mb-4 text-gray-700 text-4xl font-martel'>Every Client Matters</h2>
                 <p className='text-gray-400 text-sm'>Problems trying to resolve the conflict between

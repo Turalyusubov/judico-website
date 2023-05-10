@@ -33,7 +33,7 @@ export default function Team() {
     ]
 
     return (
-        <div className='flex flex-col justify-center bg-neutral-50 w-full px-6 sm:px-12 lg:px-32 py-20 flex flex-col items-center'>
+        <div id='team' className='flex flex-col justify-center bg-neutral-50 w-full px-6 sm:px-12 lg:px-32 py-20 flex flex-col items-center'>
             <div className="sm:w-4/6 md:w-3/5 xl:w-2/5 text-center mb-20">
                 <h2 className='font-bold mb-4 text-gray-700 text-4xl font-martel'>Meet Our Attorneys</h2>
                 <p className='text-gray-400 text-sm'>Problems trying to resolve the conflict between the two major realms
