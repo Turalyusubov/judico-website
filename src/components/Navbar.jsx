@@ -20,7 +20,7 @@ export default function Navbar() {
 
 
     return (
-        <nav className={`z-20 border-b-1 shadow-md bg-[#f1f1f1c1] backdrop-blur-md fixed w-full px-6 sm:px-12 lg:px-32 ${isOpen ? 'bg-stone-100 h-screen flex flex-col gap-10' : 'bg-transparent'}`}>
+        <nav className={`z-50 border-b-1 shadow-md bg-[#f0f1f1c1] backdrop-blur-md fixed w-full px-6 sm:px-12 lg:px-32 ${isOpen ? 'bg-stone-100 h-screen flex flex-col gap-10' : 'bg-transparent'}`}>
             <div className=" flex w-full py-6 justify-between">
                 <div className="nav-logo text-gray-700 mr-10">
                     <span className='font-martel font-bold text-2xl'>Judico</span>

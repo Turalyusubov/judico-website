@@ -1,6 +1,7 @@
 import React from 'react'
 import World from '../assets/world.png'
 import Employee from '../assets/employee.jpg'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 export default function Contact() {
     return (
