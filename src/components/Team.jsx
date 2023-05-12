@@ -45,7 +45,7 @@ export default function Team() {
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-14">
                 <Slide className='w-full'>
                     {team.map(member => (
-                        <div className="flex flex-col p-10 items-center bg-white shadow">
+                        <div key={member.id} className="flex flex-col p-10 items-center bg-white shadow">
                             <img className='rounded-full w-32' src={member.img} alt="" />
                             <span className='py-2 text-sm font-bold text-yellow-500'>{member.duty}</span>
                             <h5 className='pb-1 font-martel text-gray-700 font-bold'>{member.name}</h5>

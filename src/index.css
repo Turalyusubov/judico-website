@@ -12,12 +12,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    /* position: fixed; */
-    /* position: ; */
+nav {
+    backdrop-filter: blur(12px);
 }
 
-nav {
-    position: fixed;
-    /* color: #f3f3f3c2; */
+.nav-bg {
+    background-color: #f1f1f1c1;
+    z-index: 1;
 }

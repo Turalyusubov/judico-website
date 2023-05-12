@@ -17,9 +17,9 @@ export default function About() {
             </div>
             <div className="grid md:grid-cols-2 gap-20">
                 <Slide className='w-full'>
-                    <div className="relative">
-                        <img className='w-full h-full object-cover' src={Image} alt="team" />
-                        <div className="absolute text-white z-10 bg-cyan-800 rounded-full text-3xl p-4 top-1/2 left-1/2">
+                    <div className="group cursor-pointer relative shadow-xl overflow-hidden">
+                        <img className='transition-all duration-300 group-hover:scale-125 w-full h-full object-cover' src={Image} alt="team" />
+                        <div className="group absolute text-white z-10 bg-cyan-800 rounded-full text-3xl p-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                             <BsFillPlayFill />
                         </div>
                         <div className="absolute top-0 bg-gradient-to-t from-neutral-800 to-transparent w-full h-full"></div>

@@ -9,47 +9,34 @@ export default function Features() {
         {
             id: 1,
             title: 'Frauds or Mislead',
-            img: 'doc'
+            img: Doc
         },
         {
             id: 2,
             title: 'Bailes & Warrants',
-            img: 'scales'
+            img: Scales
         },
         {
             id: 3,
             title: 'Federal Drug Crimes',
-            img: 'hammer'
+            img: Hammer
         },
         {
             id: 4,
             title: 'Traffic Related Crimes',
-            img: 'scales'
+            img: Scales
         },
         {
             id: 5,
             title: 'Family Law',
-            img: 'hammer'
+            img: Hammer
         },
         {
             id: 6,
             title: 'Business Law',
-            img: 'scales'
+            img: Scales
         },
     ]
-
-    const imgUrl = (img) => {
-        switch (img) {
-            case 'doc':
-                return Doc;
-            case 'scales':
-                return Scales;
-            case 'hammer':
-                return Hammer;
-            default:
-                console.log('no')
-        }
-    }
 
     return (
         <div id='features' className='w-full px-6 sm:px-12 lg:px-32 py-20'>
@@ -63,8 +50,10 @@ export default function Features() {
             <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-4 w-full my-10'>
                 <Slide direction='right' className='w-full'>
                     {features.map(feature => (
-                        <div className='flex border border-gray-200 p-4 shadow rounded-sm items-center gap-4 w-full bg-gray-50' key={feature.id}>
-                            <img className='bg-cyan-800 rounded-full p-4' src={imgUrl(feature.img)} alt="" />
+                        <div className='cursor-pointer flex border border-gray-200 p-4 shadow rounded-sm items-center gap-4 w-full bg-gray-50' key={feature.id}>
+                            <div className="rounded-full bg-cyan-800 w-[60px] h-[60px] flex items-center justify-center">
+                                <img className='' src={feature.img} alt="" />
+                            </div>
                             <p className='font-bold text-gray-500'>{feature.title}</p>
                         </div>
                     ))}
@@ -72,8 +61,8 @@ export default function Features() {
             </div>
             <Slide className='w-full'>
                 <div className="flex-col px-6 sm:px-0 sm:flex-row font-open-sans btns flex gap-4 sm:gap-2 mx-auto sm:mx-0">
-                    <button className='bg-cyan-800 rounded-full px-8 border-2 border-cyan-800 py-3 font-bold text-white text-sm'>Get Quote Now</button>
-                    <button className='bg-transparent rounded-full px-8 border-2 border-cyan-800 py-3 font-bold text-cyan-800 text-sm'>Learn More</button>
+                    <button className='transition-all duration-300 hover:bg-transparent hover:text-cyan-800 bg-cyan-800 rounded-full px-8 border-2 border-cyan-800 py-3 font-bold text-white text-sm'>Get Quote Now</button>
+                    <button className='transition-all duration-300 hover:bg-cyan-800 hover:text-white bg-transparent rounded-full px-8 border-2 border-cyan-800 py-3 font-bold text-cyan-800 text-sm'>Learn More</button>
                 </div>
             </Slide>
         </div>

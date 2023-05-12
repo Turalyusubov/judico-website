@@ -1,7 +1,6 @@
 import React from 'react'
 import World from '../assets/world.png'
 import Employee from '../assets/employee.jpg'
-import { Fade, Slide } from 'react-awesome-reveal'
 
 export default function Contact() {
     return (
@@ -37,24 +36,27 @@ export default function Contact() {
                     </div>
                     <div class="relative mb-4">
                         <span className="block text-gray-700 text-sm font-bold mb-2">Department*</span>
-                        <select className="h-12 font-montserrat text-sm text-gray-400 bg-gray-50 appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        <select className="cursor-pointer h-12 font-montserrat text-sm text-gray-400 bg-gray-50 appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             <option>Employment and Labor</option>
                             <option>Criminal Defense</option>
                             <option>Business</option>
                         </select>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 top-1/3">
+                            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                        </div>
                     </div>
                     <div className="relative mb-8">
                         <span className="block text-gray-700 text-sm font-bold mb-2">Time*</span>
-                        <select className="h-12 font-montserrat text-sm text-gray-400 bg-gray-50 appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        <select className="h-12 cursor-pointer font-montserrat text-sm text-gray-400 bg-gray-50 appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             <option>11:00 avaiable</option>
                             <option>14:00 avaiable</option>
                             <option>16:00 avaiable</option>
                         </select>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 top-1/2">
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 top-1/3">
                             <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                         </div>
                     </div>
-                    <button className='bg-[#784F33] text-white w-full h-12 text-center text-sm font-bold rounded'>Book Appointment</button>
+                    <button className='border-2 border-[#784F33] hover:bg-white hover:text-[#784F33] transition-all duration-300 bg-[#784F33] text-white w-full h-12 text-center text-sm font-bold rounded'>Book Appointment</button>
                 </form>
             </div>
             <div className="contact-bottom lg:h-[40vh] bg-gray-50 w-full px-6 sm:px-12 lg:px-32 py-10 lg:py-20">
