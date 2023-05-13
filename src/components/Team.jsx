@@ -3,7 +3,7 @@ import Person4 from '../assets/person4.jpeg'
 import Person5 from '../assets/person5.jpeg'
 import Person6 from '../assets/person6.jpeg'
 import Person7 from '../assets/person7.jpeg'
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Fade, Slide } from 'react-reveal'
 
 export default function Team() {
     const team = [
@@ -36,14 +36,14 @@ export default function Team() {
     return (
         <div id='team' className='flex flex-col justify-center bg-neutral-50 w-full px-6 sm:px-12 lg:px-32 py-20 flex flex-col items-center'>
             <div className="sm:w-4/6 md:w-3/5 xl:w-2/5 text-center mb-20">
-                <Fade>
+                <Fade left>
                     <h2 className='font-bold mb-4 text-gray-700 text-4xl font-martel'>Meet Our Attorneys</h2>
                     <p className='text-gray-400 text-sm'>Problems trying to resolve the conflict between the two major realms
                         of Classical physics: Newtonian mechanics  </p>
                 </Fade>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-14">
-                <Slide className='w-full'>
+                <Slide left className='w-full'>
                     {team.map(member => (
                         <div key={member.id} className="flex flex-col p-10 items-center bg-white shadow">
                             <img className='rounded-full w-32' src={member.img} alt="" />

@@ -20,3 +20,7 @@ nav {
     background-color: #f1f1f1c1;
     z-index: 1;
 }
+
+.header-bg {
+    background-image: url(./assets/girl-sitting.jpg);
+}

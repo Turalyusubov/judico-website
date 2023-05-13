@@ -3,21 +3,21 @@ import Person1 from '../assets/person1.jpeg'
 import Person2 from '../assets/person2.jpeg'
 import Person3 from '../assets/person3.jpeg'
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Fade, Slide } from 'react-reveal'
 
 
 export default function Testimonials() {
     return (
         <div id='testimonials' className='flex flex-col justify-center bg-cyan-800 w-full px-6 sm:px-12 lg:px-32 py-20 flex flex-col items-center'>
             <div className="sm:w-4/6 md:w-3/5 xl:w-2/5 text-center text-white mb-20">
-                <Fade>
+                <Fade left>
                     <h2 className='font-bold mb-4 text-4xl font-martel'>What Clients Say</h2>
                     <p className='text-sm'>Problems trying to resolve the conflict between the two major realms
                         of Classical physics: Newtonian mechanics  </p>
                 </Fade>
             </div>
             <div className="grid flex flex-col items-center justify-center grid-cols-1 lg:grid-cols-3 w-full gap-20 lg:gap-8">
-                <Slide className='w-full'>
+                <Slide left className='w-full'>
                     <div className="bg-white shadow-lg rounded-xl relative w-full px-8 py-8 lg:px-10 xl:px-16">
                         <img className='absolute shadow-lg w-28 rounded-full -top-14 left-10' src={Person1} alt="person" />
                         <div className="mt-10">

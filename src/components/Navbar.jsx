@@ -44,19 +44,19 @@ export default function Navbar() {
                     </div>
                     <div className={`nav-menu items-center md:flex ${isOpen ? 'flex block mt-6 justify-center' : 'hidden'}`}>
                         <ul className={`flex font-bold text-gray-700 ${isOpen ? 'flex-col gap-10 text-xl' : 'gap-8'}`}>
-                            <li className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
+                            <li onClick={() => setIsOpen(false)} className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
                                 <a href="#features">Features</a>
                             </li>
-                            <li className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
+                            <li onClick={() => setIsOpen(false)} className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
                                 <a href="#about">About</a>
                             </li>
-                            <li className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
+                            <li onClick={() => setIsOpen(false)} className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
                                 <a href="#testimonials">Testimonials</a>
                             </li>
-                            <li className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
+                            <li onClick={() => setIsOpen(false)} className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
                                 <a href="#team">Team</a>
                             </li>
-                            <li className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
+                            <li onClick={() => setIsOpen(false)} className="nav-item transition duration-500 after:bg-gray-500 after:h-1 after:w-0 after:block hover:after:w-full">
                                 <a href="#contact">Contact</a>
                             </li>
                         </ul>
